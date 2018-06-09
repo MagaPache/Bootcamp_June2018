@@ -6,6 +6,7 @@
 package com.globant.bootcamp.semana1.Model;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  *
@@ -14,7 +15,7 @@ import java.sql.Timestamp;
 class Condition {
     
     private int code;
-    private Timestamp date;
+    private Date date;
     private int temperature;
     private String weatherDescription;
 
@@ -26,11 +27,11 @@ class Condition {
         this.code = code;
     }
 
-    public Timestamp getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -53,7 +54,7 @@ class Condition {
     public Condition() {
     }
 
-    public Condition(int code, Timestamp date, int temperature, String weatherDescription) {
+    public Condition(int code, Date date, int temperature, String weatherDescription) {
         this.code = code;
         this.date = date;
         this.temperature = temperature;
